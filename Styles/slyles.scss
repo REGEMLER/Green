@@ -1,0 +1,21 @@
+@import "reset";
+$mainFont: 'Roboto', sans-serif;
+$mainFontWeight: 400;
+$colorDark: #000000;
+$colorLight: #FFFFFF;
+$mainColor: #9AA8B1;
+$H1size: 6.6rem; 
+$bigTitleSize: 4.3rem;
+$titleSize: 3.4rem;
+$middleSize: 2.7rem; 
+$footerSize: 2.2rem;
+$mainSize: 1.4rem;
+$smallSize: 1.3rem;
+@mixin textStyle($Font, $Size, $Weight, $LH, $color, $Letter){
+    font-family: $Font;
+    font-size:$Size;
+    line-height:$LH;
+    font-weight:$Weight;
+    color: $color;
+    letter-spacing: $Letter;
+}
