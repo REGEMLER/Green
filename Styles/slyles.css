@@ -26,4 +26,115 @@ ul, ol, li {
 a {
   text-decoration: none;
 }
+
+.header-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header-menu {
+  width: 120rem;
+  margin: 3rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-menu a {
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.header-menu .header-list-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-menu .header-list-1 .menu-link1 {
+  margin-right: 2.5rem;
+}
+
+.header-content {
+  width: 100%;
+  margin: 0 auto;
+  height: 60rem;
+  background-image: url(../IMG/header-bgr.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.header-content .header-title {
+  width: 35%;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  font-size: 4.3rem;
+  line-height: 4.6rem;
+  font-weight: 400;
+  color: #FFFFFF;
+  padding-top: 18rem;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.header-content .header-text {
+  width: 30%;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  font-weight: 400;
+  color: #FFFFFF;
+  padding-top: 1.2rem;
+  text-align: center;
+}
+
+.header-content .header-link {
+  display: block;
+  width: 15%;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  color: #FFFFFF;
+  padding-top: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    max-width: 1200px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .wrapper {
+    max-width: 992px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    max-width: 768px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .wrapper {
+    max-width: 576px;
+  }
+}
 /*# sourceMappingURL=slyles.css.map */

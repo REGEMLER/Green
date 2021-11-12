@@ -1,21 +1,86 @@
 @import "reset";
-$mainFont: 'Roboto', sans-serif;
-$mainFontWeight: 400;
-$colorDark: #000000;
-$colorLight: #FFFFFF;
-$mainColor: #9AA8B1;
-$H1size: 6.6rem; 
-$bigTitleSize: 4.3rem;
-$titleSize: 3.4rem;
-$middleSize: 2.7rem; 
-$footerSize: 2.2rem;
-$mainSize: 1.4rem;
-$smallSize: 1.3rem;
-@mixin textStyle($Font, $Size, $Weight, $LH, $color, $Letter){
-    font-family: $Font;
-    font-size:$Size;
-    line-height:$LH;
-    font-weight:$Weight;
-    color: $color;
-    letter-spacing: $Letter;
+@import "variables";
+
+.header-container{
+    width: 100%;
+    margin: 0 auto;
+}
+.header-menu{
+    width: 120rem;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a{
+        display: block;
+        @include textStyle($mainFont, $smallSize, $mainFontWeight, 1.5rem, $colorDark);
+        text-transform: uppercase;
+    }
+    .header-list-1{
+        display: flex;
+        .menu-link1{
+            margin-right: 2.5rem;
+        }
+    }
+}
+.header-content{
+    width: 100%;
+    margin: 0 auto;
+    height: 60rem;
+    background-image: url(../IMG/header-bgr.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    .header-title{
+        width: 35%;
+        margin: 0 auto;
+        @include textStyle($mainFont, $bigTitleSize, $mainFontWeight, 4.6rem, $colorLight);
+        padding-top: 18rem;
+        text-transform: capitalize;
+        text-align: center;
+    }
+    .header-text{
+        width: 30%;
+        margin: 0 auto;
+        @include textStyle($mainFont, $mainSize, $mainFontWeight, 1.8rem, $colorLight);
+        padding-top: 1.2rem;
+        text-align: center;
+    }
+    .header-link{
+        display: block;
+        width: 15%;
+        margin: 0 auto;
+        @include textStyle($mainFont, $smallSize, $mainFontWeight, 1.5rem, $colorLight);
+        padding-top: 3rem;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+    .wrapper{
+        max-width: 1200px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .wrapper{
+        max-width: 992px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper{
+        max-width: 768px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .wrapper{
+        max-width: 576px;
+    }
 }
