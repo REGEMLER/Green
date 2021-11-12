@@ -69,10 +69,11 @@ a {
 .header-content {
   width: 100%;
   margin: 0 auto;
-  height: 60rem;
+  height: 100%;
   background-image: url(../IMG/header-bgr.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  background-position: center center;
 }
 
 .header-content .header-title {
@@ -110,6 +111,50 @@ a {
   font-weight: 400;
   color: #FFFFFF;
   padding-top: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 20rem;
+}
+
+.design-container {
+  width: 50rem;
+  margin: 8rem auto;
+}
+
+.design-container .design-title {
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  font-size: 4.3rem;
+  line-height: 5.8rem;
+  font-weight: 400;
+  color: #000000;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.design-container .design-text {
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  color: #A0A0A0;
+  padding-top: 2.5rem;
+  text-align: center;
+}
+
+.design-container .design-link {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  line-height: 2.1rem;
+  font-weight: 400;
+  color: #000000;
+  padding-top: 2.5rem;
   text-align: center;
   text-transform: uppercase;
 }

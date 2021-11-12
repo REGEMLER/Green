@@ -26,10 +26,12 @@
 .header-content{
     width: 100%;
     margin: 0 auto;
-    height: 60rem;
+    // height: 50rem;
+    height: 100%;
     background-image: url(../IMG/header-bgr.png);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    background-position: center center;
     .header-title{
         width: 35%;
         margin: 0 auto;
@@ -53,11 +55,38 @@
         padding-top: 3rem;
         text-align: center;
         text-transform: uppercase;
+        padding-bottom: 20rem;
     }
 }
 
-
-
+// -------------------Design-------------------------
+.design-container{
+    width: 50rem;
+    margin: 8rem auto;
+    .design-title{
+        width: 100%;
+        margin: 0 auto;
+        @include textStyle($mainFont, $bigTitleSize, $mainFontWeight, 5.8rem, $colorDark);
+        text-transform: capitalize;
+        text-align: center;
+    }
+    .design-text{
+        width: 100%;
+        margin: 0 auto;
+        @include textStyle($mainFont, $mainSize, $mainFontWeight, 2.4rem, $infoColor);
+        padding-top: 2.5rem;
+        text-align: center;
+    }
+    .design-link{
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        @include textStyle($mainFont, $smallSize, $mainFontWeight, 2.1rem, $colorDark);
+        padding-top: 2.5rem;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
 
 
 
