@@ -146,6 +146,21 @@
         margin: 2rem auto;
         justify-content: space-around;
     }
+    .design-container{
+        width: 50rem;
+        margin: 5rem auto;
+    }
+    .computers-container{
+        width: 100%;
+        margin: 2rem auto;
+        .computers-img{
+            height: 40rem;
+            width: 48rem;
+        }
+        .computers-title{
+            padding-top: 3rem;
+        }
+    }
 }
 
 
@@ -166,12 +181,24 @@
     }
     .design-container{
         width: 50rem;
-        margin: 5rem auto;
+        margin: 3rem auto;
         .design-text{
             padding-top: 1.5rem;
         }
         .design-link{
             padding-top: 1.5rem;
+        }
+    }
+    .computers-container{
+        .computers-item1{
+            margin-right: 2rem;
+        }
+        .computers-img{
+            height: 35rem;
+            width: 39rem;
+        }
+        .computers-title{
+            padding-top: 3rem;
         }
     }
 }
@@ -221,6 +248,31 @@
         margin: 3rem auto;
         .design-link{
             font-size: $middleSize;
+            color: $infoColor;
+        }
+    }
+    .computers-container{
+        width: 100%;
+        margin: 4rem auto;  
+        flex-direction: column;
+        .computers-item{
+            margin-bottom: 3rem;
+        }
+        .computers-item1{
+            margin-right: 0;
+        }
+        .computers-img{
+            height: 40rem;
+            width: 55rem;
+            object-fit: cover;
+        }
+        .computers-title{
+            padding-top: 1rem;
+        }
+        .computers-link{
+            padding-top: 2rem;
+            font-size: $middleSize;
+            color: $infoColor;
         }
     }
 }
@@ -236,5 +288,11 @@
     .design-container{
         width: 30rem;
         margin: 3rem auto;
+    }
+    .computers-container{
+        .computers-img{
+            height: 30rem;
+            width: 40rem;
+        }
     }
 }

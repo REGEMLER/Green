@@ -242,6 +242,21 @@ a {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
+  .design-container {
+    width: 50rem;
+    margin: 5rem auto;
+  }
+  .computers-container {
+    width: 100%;
+    margin: 2rem auto;
+  }
+  .computers-container .computers-img {
+    height: 40rem;
+    width: 48rem;
+  }
+  .computers-container .computers-title {
+    padding-top: 3rem;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -257,13 +272,23 @@ a {
   }
   .design-container {
     width: 50rem;
-    margin: 5rem auto;
+    margin: 3rem auto;
   }
   .design-container .design-text {
     padding-top: 1.5rem;
   }
   .design-container .design-link {
     padding-top: 1.5rem;
+  }
+  .computers-container .computers-item1 {
+    margin-right: 2rem;
+  }
+  .computers-container .computers-img {
+    height: 35rem;
+    width: 39rem;
+  }
+  .computers-container .computers-title {
+    padding-top: 3rem;
   }
 }
 
@@ -315,6 +340,35 @@ a {
   }
   .design-container .design-link {
     font-size: 2.7rem;
+    color: #A0A0A0;
+  }
+  .computers-container {
+    width: 100%;
+    margin: 4rem auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .computers-container .computers-item {
+    margin-bottom: 3rem;
+  }
+  .computers-container .computers-item1 {
+    margin-right: 0;
+  }
+  .computers-container .computers-img {
+    height: 40rem;
+    width: 55rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .computers-container .computers-title {
+    padding-top: 1rem;
+  }
+  .computers-container .computers-link {
+    padding-top: 2rem;
+    font-size: 2.7rem;
+    color: #A0A0A0;
   }
 }
 
@@ -325,6 +379,10 @@ a {
   .design-container {
     width: 30rem;
     margin: 3rem auto;
+  }
+  .computers-container .computers-img {
+    height: 30rem;
+    width: 40rem;
   }
 }
 /*# sourceMappingURL=slyles.css.map */
