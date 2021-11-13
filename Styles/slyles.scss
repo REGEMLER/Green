@@ -96,8 +96,46 @@
         }
     }
 }
-
-
+// -------------------Computers-------------------------
+.computers-container{
+    width: 121rem;
+    margin: 8rem auto;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    .computers-item1{
+        margin-right: 2.5rem;
+    }
+    .computers-img{
+        height: 40rem;
+        width: 55rem;
+        object-fit: cover;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .computers-title{
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 5rem;
+        @include textStyle($mainFont, $middleSize, $mainFontWeight, 3rem, $colorDark);
+        text-align: center;
+        text-transform: capitalize;
+    }
+    .computers-link{
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        @include textStyle($mainFont, $smallSize, $mainFontWeight, 1.5rem, $colorDark);
+        padding-top: 2.5rem;
+        text-align: center;
+        text-transform: uppercase;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
 
 @media screen and (max-width: 1200px) {
     .wrapper{
@@ -109,6 +147,9 @@
         justify-content: space-around;
     }
 }
+
+
+
 
 @media screen and (max-width: 992px) {
     .wrapper{
@@ -123,7 +164,20 @@
             font-size: $middleSize;
         }
     }
+    .design-container{
+        width: 50rem;
+        margin: 5rem auto;
+        .design-text{
+            padding-top: 1.5rem;
+        }
+        .design-link{
+            padding-top: 1.5rem;
+        }
+    }
 }
+
+
+
 
 @media screen and (max-width: 768px) {
     .wrapper{
@@ -132,15 +186,10 @@
     .header-menu{
         width: 100%;
         margin: 0 auto;
-        display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
         background-color: $mainColor;
         a{
-            display: block;
-            @include textStyle($mainFont, $smallSize, $mainFontWeight, 1.5rem, $colorDark);
-            text-transform: uppercase;
             margin-bottom: 1rem;
         }
         .header-logo{
@@ -167,10 +216,25 @@
             font-size: $middleSize;
         }
     }   
+    .design-container{
+        width: 50rem;
+        margin: 3rem auto;
+        .design-link{
+            font-size: $middleSize;
+        }
+    }
 }
+
+
+
+
 
 @media screen and (max-width: 576px) {
     .wrapper{
         max-width: 576px;
     } 
+    .design-container{
+        width: 30rem;
+        margin: 3rem auto;
+    }
 }
