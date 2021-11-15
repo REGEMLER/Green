@@ -1,6 +1,8 @@
 @import "reset";
 @import "variables";
 
+
+// -------------------Header-------------------------
 .header-container{
     width: 100vw;
     margin: 0 auto;
@@ -136,6 +138,76 @@
         }
     }
 }
+
+// -------------------Products-------------------------
+.products-container{
+    width: 121rem;
+    margin: 13rem auto;
+}
+.products-header{
+    width: 28rem;
+    margin: 0 auto;
+    .products-title{
+        width: 100%;
+        margin: 0 auto;
+        @include textStyle($mainFont, $titleSize, $mainFontWeight, 3.6rem, $colorDark);
+        text-align: center;
+        text-transform: capitalize; 
+    }
+    .products-text{
+        width: 100%;
+        margin: 0 auto;
+        @include textStyle($mainFont, $mainSize, $mainFontWeight, 1.8rem, $infoColor);
+        padding-top: 1.6rem;
+        text-align: center;
+    }
+    .products-scroll{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5rem;
+        margin-bottom: 2.5rem;
+        .products-cuadr{
+            width: 0.7rem;
+            height: 0.7rem;
+            background-color:$colorDark;
+            margin-right: 1.6rem;
+        }
+        .products-cuadr3{
+            margin-right: 0;
+        }
+    }
+}
+.products-row{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.products-card{
+    margin-right: 2.5rem;
+    .products-name{
+        width: 100%;
+        margin: 0 auto;
+        @include textStyle($mainFont, $smallSize, $mainFontWeight, 2.1rem, $infoColor);
+        padding-top: 2rem;
+        text-align: left; 
+        text-transform: capitalize; 
+    }
+    .products-price{
+        width: 100%;
+        margin: 0 auto;
+        @include textStyle($mainFont, $smallSize, $mainFontWeight, 2.1rem, $infoColor);
+        padding-top: 1rem;
+        text-align: left;
+    }
+}
+.products-card4{
+    margin-right: 0;
+}
+
+
 
 @media screen and (max-width: 1200px) {
     .wrapper{

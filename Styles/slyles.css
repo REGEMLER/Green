@@ -232,6 +232,112 @@ a {
   text-decoration: underline;
 }
 
+.products-container {
+  width: 121rem;
+  margin: 13rem auto;
+}
+
+.products-header {
+  width: 28rem;
+  margin: 0 auto;
+}
+
+.products-header .products-title {
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  font-size: 3.4rem;
+  line-height: 3.6rem;
+  font-weight: 400;
+  color: #000000;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.products-header .products-text {
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  font-weight: 400;
+  color: #A0A0A0;
+  padding-top: 1.6rem;
+  text-align: center;
+}
+
+.products-header .products-scroll {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5rem;
+  margin-bottom: 2.5rem;
+}
+
+.products-header .products-scroll .products-cuadr {
+  width: 0.7rem;
+  height: 0.7rem;
+  background-color: #000000;
+  margin-right: 1.6rem;
+}
+
+.products-header .products-scroll .products-cuadr3 {
+  margin-right: 0;
+}
+
+.products-row {
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.products-card {
+  margin-right: 2.5rem;
+}
+
+.products-card .products-name {
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  line-height: 2.1rem;
+  font-weight: 400;
+  color: #A0A0A0;
+  padding-top: 2rem;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.products-card .products-price {
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  line-height: 2.1rem;
+  font-weight: 400;
+  color: #A0A0A0;
+  padding-top: 1rem;
+  text-align: left;
+}
+
+.products-card4 {
+  margin-right: 0;
+}
+
 @media screen and (max-width: 1200px) {
   .wrapper {
     max-width: 1200px;
