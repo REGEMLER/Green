@@ -31,7 +31,6 @@
 .header-content{
     width: 100%;
     margin: 0 auto;
-    // height: 50rem;
     height: 100%;
     background-image: url(../IMG/header-bgr.png);
     background-repeat: no-repeat;
@@ -106,7 +105,7 @@
     justify-content: center;
     align-items: center;
     .computers-item1{
-        margin-right: 2.5rem;
+        margin-right: 3rem;
     }
     .computers-img{
         height: 40rem;
@@ -142,7 +141,8 @@
 // -------------------Products-------------------------
 .products-container{
     width: 121rem;
-    margin: 13rem auto;
+    margin: 10rem auto;
+    // padding-top: 10rem;
 }
 .products-header{
     width: 28rem;
@@ -213,15 +213,18 @@
     .wrapper{
         max-width: 1200px;
     }
+    // -------------------Header-------------------------
     .header-menu{
         width: 100%;
         margin: 2rem auto;
         justify-content: space-around;
     }
+    // ------------------design-------------------------
     .design-container{
         width: 50rem;
         margin: 5rem auto;
     }
+    // ------------------computers-------------------------
     .computers-container{
         width: 100%;
         margin: 2rem auto;
@@ -233,12 +236,32 @@
             padding-top: 3rem;
         }
     }
+    // ------------------products-------------------------
+    .products-container{
+        width: 100rem;
+        margin: 8rem auto;
+        .products-card{
+            margin-right: 2rem;
+        }
+        .products-card4{
+            margin-right: 0;
+        }
+        .products-img{
+            width: 23rem;
+            height: 30rem;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
 }
 
 
 
 
 @media screen and (max-width: 992px) {
+    // ------------------Header-------------------------
     .wrapper{
         max-width: 992px;
     }
@@ -251,6 +274,7 @@
             font-size: $middleSize;
         }
     }
+    // -----------------design-------------------------
     .design-container{
         width: 50rem;
         margin: 3rem auto;
@@ -261,6 +285,7 @@
             padding-top: 1.5rem;
         }
     }
+    // -----------------computers-------------------------
     .computers-container{
         .computers-item1{
             margin-right: 2rem;
@@ -273,12 +298,59 @@
             padding-top: 3rem;
         }
     }
+    // -----------------products-------------------------
+    .products-container{
+        width: 100%;
+        margin: 5rem auto;
+        .products-scroll{
+            margin: 2.5rem auto;
+        }
+    }
+    .products-row{
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-areas: "a b"
+                             "c d";
+        grid-template-rows: repeat(1fr,2);
+        grid-template-rows: repeat(1fr,2);
+        grid-gap: 5rem;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    .products-card{
+        margin: 0;
+    }
+    .products-card1{
+      grid-area: a;  
+    }
+    .products-card2{
+      grid-area: b;  
+    }
+    .products-card3{
+      grid-area: c;  
+    }
+    .products-card4{
+      grid-area: d; 
+    }
+    .products-img{
+        width: 31rem;
+        height: 43rem;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    
 }
 
 
 
 
 @media screen and (max-width: 768px) {
+    // -----------------header-------------------------
     .wrapper{
         max-width: 768px;
     }
@@ -315,6 +387,7 @@
             font-size: $middleSize;
         }
     }   
+    // -----------------design-------------------------
     .design-container{
         width: 50rem;
         margin: 3rem auto;
@@ -323,9 +396,10 @@
             color: $infoColor;
         }
     }
+    // -----------------computers-------------------------
     .computers-container{
         width: 100%;
-        margin: 4rem auto;  
+        margin: 3rem auto;  
         flex-direction: column;
         .computers-item{
             margin-bottom: 3rem;
@@ -347,6 +421,14 @@
             color: $infoColor;
         }
     }
+    // -----------------products-------------------------
+    .products-container{
+        width: 100%;
+        margin: 3rem auto;
+    .products-row{
+        grid-gap: 3rem;
+    }
+    }
 }
 
 
@@ -354,17 +436,35 @@
 
 
 @media screen and (max-width: 576px) {
+    // -----------------header-------------------------
     .wrapper{
         max-width: 576px;
     } 
+    // -----------------design-------------------------
     .design-container{
         width: 30rem;
         margin: 3rem auto;
     }
+    // -----------------computers-------------------------
     .computers-container{
         .computers-img{
             height: 30rem;
             width: 40rem;
+        }
+    }
+    // -----------------products-------------------------
+    .products-row{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .products-name{
+            text-align: center; 
+        }
+        .products-price{
+            text-align: center;
         }
     }
 }
