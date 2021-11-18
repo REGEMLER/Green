@@ -294,6 +294,103 @@
         text-align: center;
     }
 }
+// -------------------gallery-------------------------
+.gallery-container{
+    width: 95%;
+    margin: 8rem auto;
+    display: grid;
+    grid-template-columns: repeat(1fr,4);
+    grid-template-rows: repeat(1fr,6);
+    grid-gap: 2rem;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas: "a b c d e f "
+    "a1 b1 c1 d1 e1 f1 "
+    "a2 b2 c2 d2 e2 f2 "
+    "a3 b3 c3 d3 e3 f3 ";
+    .gallery-item{
+        width: 20rem;
+        height: 27rem;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .gallery-item1{
+        grid-area: a;  
+    }
+    .gallery-item2{
+        grid-area: b;  
+    }
+    .gallery-item3{
+        grid-area: c;  
+    }
+    .gallery-item4{
+        grid-area: d;  
+    }
+    .gallery-item5{
+        grid-area: e;  
+    }
+    .gallery-item6{
+        grid-area: f;  
+    }
+    .gallery-item7{
+        grid-area: a1;  
+    }
+    .gallery-item8{
+        grid-area: b1;  
+    }
+    .gallery-item9{
+        grid-area: c1;  
+    }
+    .gallery-item10{
+        grid-area: d1;  
+    }
+    .gallery-item11{
+        grid-area: e1;  
+    }
+    .gallery-item12{
+        grid-area: f1;  
+    }
+    .gallery-item13{
+        grid-area: a2;  
+    }
+    .gallery-item14{
+        grid-area: b2;  
+    }
+    .gallery-item15{
+        grid-area: c2;  
+    }
+    .gallery-item16{
+        grid-area: d2;  
+    }
+    .gallery-item17{
+        grid-area: e2;  
+    }
+    .gallery-item18{
+        grid-area: f2;  
+    }
+    .gallery-item19{
+        grid-area: a3;  
+    }
+    .gallery-item20{
+        grid-area: b3;  
+    }
+    .gallery-item21{
+        grid-area: c3;  
+    }
+    .gallery-item22{
+        grid-area: d3;  
+    }
+    .gallery-item23{
+        grid-area: e3;  
+    }
+    .gallery-item24{
+        grid-area: f3;  
+    }
+}
 
 
 @media screen and (max-width: 1200px) {
@@ -358,6 +455,13 @@
             }   
         }
     }
+        // -------------------gallery-------------------------
+        .gallery-container{
+            .gallery-item{
+                width: 14rem;
+                height: 20rem;
+            }
+        }
 }
 
 
@@ -458,7 +562,24 @@
         .made-item2{
             width: 95%;
         }
-    }   
+    }  
+    // -------------------gallery-------------------------
+    .gallery-container{
+        width: 95%;
+        margin: 5rem auto;
+        grid-template-rows: repeat(1fr,6);
+        grid-template-columns: repeat(1fr,4);
+        grid-template-areas: "a b c d"
+        "e f a1 b1"
+        "c1 d1 e1 f1"
+        "a2 b2 c2 d2"
+        "e2 f2 a3 b3"
+        "c3 d3 e3 f3 "; 
+        .gallery-item{
+            width: 18rem;
+            height: 25rem;
+        }
+    }
 }
 
 
@@ -542,7 +663,7 @@
         margin: 3rem auto;
     .products-row{
         grid-gap: 3rem;
-    }
+        }
     }
     // -------------------Main-------------------------
     .main-container{
@@ -563,8 +684,14 @@
             }
         }
     }
+    // -------------------gallery-------------------------
+    .gallery-container{
+        .gallery-item{
+            width: 12rem;
+            height: 17rem;
+        }
+    }
 }
-
 
 
 
@@ -604,5 +731,28 @@
     // -------------------Made-------------------------
     .made-container{
          width: 30rem;
+    }
+    // -------------------gallery-------------------------
+    .gallery-container{
+        width: 95%;
+        margin: 3rem auto;
+        grid-template-rows: repeat(1fr,12);
+        grid-template-columns: repeat(1fr,2);
+        grid-template-areas: "a b"
+        "c d"
+        "e f"
+        "a1 b1"
+        "c1 d1"
+        "e1 f1"
+        "a2 b2"
+        "c2 d2"
+        "e2 f2"
+        "a3 b3"
+        "c3 d3"
+        "e3 f3"; 
+        .gallery-item{
+            width: 18rem;
+            height: 25rem;
+        }
     }
 }
