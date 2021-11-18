@@ -245,7 +245,55 @@
         }
     }
 }
-
+// -------------------Made-------------------------
+.made-container{
+    width: 110rem;
+    margin: 0 auto;
+}
+.made-item1{
+    width: 80rem;
+    margin: 0 auto;
+    .made-title1{
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 11rem;
+        @include textStyle($mainFont, $titleSize, $mainFontWeight, 3.6rem, $colorDark);
+        text-transform: capitalize;
+        text-align: center;
+    }
+    .made-text1{
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 2.5rem;
+        @include textStyle($mainFont, $mainSize, $mainFontWeight, 2.4rem, $infoColor);
+        text-align: center;
+    }
+}
+.made-img{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 2.5rem;
+}
+.made-item2{
+    width: 80rem;
+    margin: 0 auto;
+    .made-title2{
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 4rem;
+        @include textStyle($mainFont, $titleSize, $mainFontWeight, 3.6rem, $colorDark);
+        text-transform: capitalize;
+        text-align: center;
+    }
+    .made-text2{
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 2.5rem;
+        @include textStyle($mainFont, $mainSize, $mainFontWeight, 2.4rem, $infoColor);
+        text-align: center;
+    }
+}
 
 
 @media screen and (max-width: 1200px) {
@@ -292,6 +340,22 @@
                 width: 100%;
                 height: 100%;
             }
+        }
+    }
+    // -------------------Made-------------------------
+    .made-container{
+        width: 99rem;
+        margin: 0 auto;
+        .made-title1{
+            padding-top: 8rem;
+        }
+        .made-img{
+            width: 95%;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }   
         }
     }
 }
@@ -382,7 +446,19 @@
             height: 100%;
         }
     }
-    
+    // -------------------Made-------------------------
+    .made-container{
+        width: 75rem;
+        .made-item1{
+            width: 95%;
+            .made-title1{
+            padding-top: 8rem;
+            }
+        }
+        .made-item2{
+            width: 95%;
+        }
+    }   
 }
 
 
@@ -478,6 +554,15 @@
             font-size: $middleSize;
         }
     }
+        // -------------------Made-------------------------
+        .made-container{
+            width: 60rem;
+            .made-item1{
+            .made-title1{
+            padding-top: 5rem;
+            }
+        }
+    }
 }
 
 
@@ -515,5 +600,9 @@
         .products-price{
             text-align: center;
         }
+    }
+    // -------------------Made-------------------------
+    .made-container{
+         width: 30rem;
     }
 }
