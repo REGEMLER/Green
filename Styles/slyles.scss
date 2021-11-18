@@ -391,6 +391,31 @@
         grid-area: f3;  
     }
 }
+// -------------------hope-------------------------
+.hope-container{
+    width: 40rem;
+    margin: 0 auto;
+    .hope-title{
+        width: 100%;
+        margin: 0 auto;
+        @include textStyle($mainFont, $titleSize, $mainFontWeight, 3.6rem, $colorDark);
+        text-transform: capitalize;
+        text-align: center;
+        padding-top: 3rem;
+    }
+    .hope-link{
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        @include textStyle($mainFont, $smallSize, $mainFontWeight, 2.1rem, $colorDark);
+        padding-top: 4.5rem;
+        text-align: center;
+        text-transform: uppercase;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
 
 
 @media screen and (max-width: 1200px) {
@@ -689,6 +714,15 @@
         .gallery-item{
             width: 12rem;
             height: 17rem;
+        }
+    }
+    // -------------------hope-------------------------
+    .hope-container{
+        .hope-title{
+            padding-top: 1rem;
+        }
+        .hope-link{
+            font-size: $footerSize;
         }
     }
 }

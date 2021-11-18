@@ -640,6 +640,42 @@ a {
   grid-area: f3;
 }
 
+.hope-container {
+  width: 40rem;
+  margin: 0 auto;
+}
+
+.hope-container .hope-title {
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  font-size: 3.4rem;
+  line-height: 3.6rem;
+  font-weight: 400;
+  color: #000000;
+  text-transform: capitalize;
+  text-align: center;
+  padding-top: 3rem;
+}
+
+.hope-container .hope-link {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  line-height: 2.1rem;
+  font-weight: 400;
+  color: #000000;
+  padding-top: 4.5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hope-container .hope-link:hover {
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 1200px) {
   .wrapper {
     max-width: 1200px;
@@ -922,6 +958,12 @@ a {
   .gallery-container .gallery-item {
     width: 12rem;
     height: 17rem;
+  }
+  .hope-container .hope-title {
+    padding-top: 1rem;
+  }
+  .hope-container .hope-link {
+    font-size: 2.2rem;
   }
 }
 
