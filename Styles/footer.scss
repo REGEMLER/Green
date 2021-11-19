@@ -1,0 +1,90 @@
+// -------------------footer-------------------------
+.footer-container{
+    width: 100%;
+    margin: 0 auto;
+    background-color: $footerColor;
+    margin-top: 4rem;
+    position: relative;
+}
+.footer-logo{
+    width: 8rem;
+    height: 8rem;
+    background-color: $colorDark;
+    position: absolute;
+    top: 0;
+    right: 5rem;
+    .footer-logo-text{
+        @include textStyle($mainFont, $mainSize, $mainFontWeight, 1.6rem, $colorLight);
+    }
+    .footer-logo-text1{
+        padding-top: 2.2rem;
+    }
+}
+.footer-content{
+    padding-top: 8rem;
+    margin-left: 5rem;
+    display: flex;           
+    .footer-link{
+        text-align: left;
+        @include textStyle($mainFont, $footerSize, $mainFontWeight, 2.4rem, $colorDark);
+        margin-bottom: 1.5rem;
+    }
+    .footer-sign{
+        margin-left: 4rem;
+        .footer-title{
+            width: 100%;
+            @include textStyle($mainFont, $footerSize, $mainFontWeight, 2.4rem, $colorDark);
+            text-transform: capitalize;
+        }
+        .footer-text{
+            width: 30%;
+            @include textStyle($mainFont, $mainSize, $mainFontWeight, 1.6rem, $infoColor);
+            padding-top: 2.5rem;
+        }
+        input[type="tel"]{
+            display: block;
+            background-color: transparent;
+            margin-top: 6rem;
+            width: 28rem;
+            border-bottom: 1px solid $colorDark;
+            &::placeholder{
+                @include textStyle($mainFont, $smallSize, $mainFontWeight, 1rem, $infoColor);
+                text-transform: uppercase;
+            }
+        }
+        input[type="submit"]{
+            display: block;
+            background-color: $colorDark;
+            margin-top: 2rem;
+            width: 15rem;
+            height: 4.5rem;
+            border: none;
+            outline: none;
+            border-radius: 2px;
+            @include textStyle($mainFont, $mainSize, $mainFontWeight, 1.6rem, $infoColor);
+            transition: all .4s linear;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+.footer-info{
+    margin-top: 8rem;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5rem;
+    padding-bottom: 3rem;
+    .footer-item{
+        @include textStyle($mainFont,$smallSize, $mainFontWeight, 1.5rem, $infoColor);
+        margin-right: 4rem;
+        transition: all .4s linear;
+        &:hover{
+            color:$colorDark;
+            text-decoration: underline;
+        }
+    }
+    .footer-item4{
+        margin-right: 0;
+    }
+}

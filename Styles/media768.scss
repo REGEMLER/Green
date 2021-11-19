@@ -1,0 +1,151 @@
+@media screen and (max-width: 768px) {
+    // -----------------header-------------------------
+    .wrapper{
+        max-width: 768px;
+    }
+    .header-menu{
+        width: 100%;
+        margin: 0 auto;
+        flex-direction: column;
+        justify-content: center;
+        background-color: $mainColor;
+        a{
+            margin-bottom: 1rem;
+        }
+        .header-logo{
+            order: -1;
+            margin: 1rem 0;
+        }
+        .header-list-1{
+            display: block;
+            .menu-link1{
+                margin-right: 0;
+            }
+        }
+    }
+    .header-content{
+        .header-title{
+            padding-top: 5rem;
+        }
+        .header-text{
+            padding-top: 1rem;
+        }
+        .header-link{
+            padding-top: 5rem;
+            padding-bottom: 10rem;
+            font-size: $middleSize;
+        }
+    }   
+    // -----------------design-------------------------
+    .design-container{
+        width: 50rem;
+        margin: 3rem auto;
+        .design-link{
+            font-size: $middleSize;
+            color: $infoColor;
+        }
+    }
+    // -----------------computers-------------------------
+    .computers-container{
+        width: 100%;
+        margin: 3rem auto;  
+        flex-direction: column;
+        .computers-item{
+            margin-bottom: 3rem;
+        }
+        .computers-item1{
+            margin-right: 0;
+        }
+        .computers-img{
+            height: 40rem;
+            width: 55rem;
+            object-fit: cover;
+        }
+        .computers-title{
+            padding-top: 1rem;
+        }
+        .computers-link{
+            padding-top: 2rem;
+            font-size: $middleSize;
+            color: $infoColor;
+        }
+    }
+    // -----------------products-------------------------
+    .products-container{
+        width: 100%;
+        margin: 3rem auto;
+    .products-row{
+        grid-gap: 3rem;
+        }
+    }
+    // -------------------Main-------------------------
+    .main-container{
+        .main-title{
+            padding-top: 6rem;
+            width: 95%;
+        }
+        .main-link{
+            font-size: $middleSize;
+        }
+    }
+        // -------------------Made-------------------------
+        .made-container{
+            width: 60rem;
+            .made-item1{
+            .made-title1{
+            padding-top: 5rem;
+            }
+        }
+    }
+    // -------------------gallery-------------------------
+    .gallery-container{
+        .gallery-item{
+            width: 12rem;
+            height: 17rem;
+        }
+    }
+    // -------------------hope-------------------------
+    .hope-container{
+        .hope-title{
+            padding-top: 1rem;
+        }
+        .hope-link{
+            font-size: $footerSize;
+        }
+    }
+    // -------------------footer-------------------------
+    .footer-container{
+        margin-top: 2rem;
+    }
+    .footer-logo{
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .footer-content{
+        width: 100%;
+        padding-top: 10rem;
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+        .footer-sign{
+            width: 50%;
+            margin-left: 3rem;
+            .footer-text{
+                width:70%;
+                padding-top: 2.5rem;
+            }
+            input[type="tel"]{
+            margin-top: 6rem;
+                width: 20rem;
+            }
+        }
+    }
+    .footer-info{
+        margin-top: 5rem;
+        .footer-item{
+            font-size: $mainSize;
+            margin-right: 2rem;
+        }
+    }
+}

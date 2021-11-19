@@ -1,0 +1,28 @@
+// -------------------Computers-------------------------
+.computers-container{
+    width: 121rem;
+    margin: 8rem auto;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    .computers-item1{
+        margin-right: 3rem;
+    }
+    .computers-img{
+        height: 40rem;
+        width: 55rem;
+        object-fit: cover;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .computers-title{
+        padding-top: 5rem;
+        @include textStyle($mainFont, $middleSize, $mainFontWeight, 3rem, $colorDark);
+    }
+    .computers-link{
+        @include textStyle($mainFont, $smallSize, $mainFontWeight, 1.5rem, $colorDark);
+        padding-top: 2.5rem;
+    }
+}

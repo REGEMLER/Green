@@ -1,0 +1,23 @@
+// -------------------Common settings-------------------------
+.title{
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 18rem;
+    text-transform: capitalize;
+    text-align: center;
+}
+.text{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.link{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    text-transform: uppercase;
+    text-align: center;
+    &:hover{
+        text-decoration: underline;
+    }
+}

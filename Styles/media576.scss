@@ -1,0 +1,71 @@
+@media screen and (max-width: 576px) {
+    // -----------------header-------------------------
+    .wrapper{
+        max-width: 576px;
+    } 
+    // -----------------design-------------------------
+    .design-container{
+        width: 30rem;
+        margin: 3rem auto;
+    }
+    // -----------------computers-------------------------
+    .computers-container{
+        .computers-img{
+            height: 30rem;
+            width: 40rem;
+        }
+    }
+    // -----------------products-------------------------
+    .products-row{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .products-name{
+            text-align: center; 
+        }
+        .products-price{
+            text-align: center;
+        }
+    }
+    // -------------------Made-------------------------
+    .made-container{
+         width: 30rem;
+    }
+    // -------------------gallery-------------------------
+    .gallery-container{
+        width: 95%;
+        margin: 3rem auto;
+        grid-template-rows: repeat(1fr,12);
+        grid-template-columns: repeat(1fr,2);
+        grid-template-areas: "a b"
+        "c d"
+        "e f"
+        "a1 b1"
+        "c1 d1"
+        "e1 f1"
+        "a2 b2"
+        "c2 d2"
+        "e2 f2"
+        "a3 b3"
+        "c3 d3"
+        "e3 f3"; 
+        .gallery-item{
+            width: 18rem;
+            height: 25rem;
+        }
+    }
+    // -------------------gray-------------------------
+    .gray-container{
+        width: 95%;
+        margin: 0 auto;
+        margin-top: 5rem;
+    }
+    // -------------------footer-------------------------
+    .footer-item{
+        font-size: $mainSize;
+        margin-right: 1rem;
+    }
+}

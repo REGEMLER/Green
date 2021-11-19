@@ -1,0 +1,65 @@
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    max-width: 1200px;
+  }
+  .header-menu {
+    width: 100%;
+    margin: 2rem auto;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .design-container {
+    width: 50rem;
+    margin: 5rem auto;
+  }
+  .computers-container {
+    width: 100%;
+    margin: 2rem auto;
+  }
+  .computers-container .computers-img {
+    height: 40rem;
+    width: 48rem;
+  }
+  .computers-container .computers-title {
+    padding-top: 3rem;
+  }
+  .products-container {
+    width: 100rem;
+    margin: 8rem auto;
+  }
+  .products-container .products-card {
+    margin-right: 2rem;
+  }
+  .products-container .products-card4 {
+    margin-right: 0;
+  }
+  .products-container .products-img {
+    width: 23rem;
+    height: 30rem;
+  }
+  .products-container .products-img img {
+    width: 100%;
+    height: 100%;
+  }
+  .made-container {
+    width: 99rem;
+    margin: 0 auto;
+  }
+  .made-container .made-title1 {
+    padding-top: 8rem;
+  }
+  .made-container .made-img {
+    width: 95%;
+  }
+  .made-container .made-img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .gallery-container .gallery-item {
+    width: 14rem;
+    height: 20rem;
+  }
+}
+/*# sourceMappingURL=media1200.css.map */
