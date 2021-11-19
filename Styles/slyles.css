@@ -487,6 +487,13 @@ a {
 .gallery-container .gallery-item {
   width: 20rem;
   height: 27rem;
+  -webkit-transition: all .4s linear;
+  transition: all .4s linear;
+}
+
+.gallery-container .gallery-item:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .gallery-container .gallery-item img {
@@ -729,6 +736,185 @@ a {
   padding-bottom: 12rem;
 }
 
+.footer-container {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #F9F9F9;
+  margin-top: 4rem;
+  position: relative;
+}
+
+.footer-logo {
+  width: 8rem;
+  height: 8rem;
+  background-color: #000000;
+  position: absolute;
+  top: 0;
+  right: 5rem;
+}
+
+.footer-logo .footer-logo-text {
+  margin: 0 auto;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.footer-logo .footer-logo-text1 {
+  padding-top: 2.2rem;
+}
+
+.footer-content {
+  padding-top: 8rem;
+  margin-left: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-content .footer-menu-item {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.2rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.footer-content .footer-menu-item:hover {
+  text-decoration: underline;
+}
+
+.footer-content .footer-sign {
+  margin-left: 4rem;
+}
+
+.footer-content .footer-sign .footer-title {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.2rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  color: #000000;
+  text-transform: capitalize;
+}
+
+.footer-content .footer-sign .footer-text {
+  width: 30%;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  font-weight: 400;
+  color: #A0A0A0;
+  padding-top: 2.5rem;
+}
+
+.footer-content .footer-sign input[type="tel"] {
+  display: block;
+  background-color: transparent;
+  margin-top: 6rem;
+  width: 28rem;
+  border-bottom: 1px solid #000000;
+}
+
+.footer-content .footer-sign input[type="tel"]::-webkit-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  line-height: 1rem;
+  font-weight: 400;
+  color: #A0A0A0;
+  text-transform: uppercase;
+}
+
+.footer-content .footer-sign input[type="tel"]:-ms-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  line-height: 1rem;
+  font-weight: 400;
+  color: #A0A0A0;
+  text-transform: uppercase;
+}
+
+.footer-content .footer-sign input[type="tel"]::-ms-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  line-height: 1rem;
+  font-weight: 400;
+  color: #A0A0A0;
+  text-transform: uppercase;
+}
+
+.footer-content .footer-sign input[type="tel"]::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  line-height: 1rem;
+  font-weight: 400;
+  color: #A0A0A0;
+  text-transform: uppercase;
+}
+
+.footer-content .footer-sign input[type="submit"] {
+  display: block;
+  background-color: #000000;
+  margin-top: 2rem;
+  width: 15rem;
+  height: 4.5rem;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  font-weight: 400;
+  color: #A0A0A0;
+  -webkit-transition: all .4s linear;
+  transition: all .4s linear;
+}
+
+.footer-content .footer-sign input[type="submit"]:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.footer-info {
+  margin-top: 8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 5rem;
+  padding-bottom: 3rem;
+}
+
+.footer-info .footer-link {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  color: #A0A0A0;
+  margin-right: 4rem;
+  -webkit-transition: all .4s linear;
+  transition: all .4s linear;
+}
+
+.footer-info .footer-link:hover {
+  color: #000000;
+}
+
+.footer-info .footer-footer-link4 {
+  margin-right: 0;
+}
+
 @media screen and (max-width: 1200px) {
   .wrapper {
     max-width: 1200px;
@@ -908,6 +1094,16 @@ a {
     width: 18rem;
     height: 25rem;
   }
+  .footer-info {
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 0;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1018,6 +1214,45 @@ a {
   .hope-container .hope-link {
     font-size: 2.2rem;
   }
+  .footer-container {
+    margin-top: 2rem;
+  }
+  .footer-logo {
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .footer-content {
+    width: 100%;
+    padding-top: 10rem;
+    margin-left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer-content .footer-sign {
+    width: 50%;
+    margin-left: 3rem;
+  }
+  .footer-content .footer-sign .footer-text {
+    width: 70%;
+    padding-top: 2.5rem;
+  }
+  .footer-content .footer-sign input[type="tel"] {
+    margin-top: 6rem;
+    width: 20rem;
+  }
+  .footer-info {
+    margin-top: 5rem;
+  }
+  .footer-info .footer-link {
+    font-size: 1.4rem;
+    margin-right: 2rem;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -1075,6 +1310,10 @@ a {
     width: 95%;
     margin: 0 auto;
     margin-top: 5rem;
+  }
+  .footer-link {
+    font-size: 1.4rem;
+    margin-right: 1rem;
   }
 }
 /*# sourceMappingURL=slyles.css.map */
