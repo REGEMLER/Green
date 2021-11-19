@@ -1,7 +1,29 @@
 @import "reset";
 @import "variables";
 
-
+// -------------------Common-------------------------
+.title{
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 18rem;
+    text-transform: capitalize;
+    text-align: center;
+}
+.text{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.link{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    text-transform: uppercase;
+    text-align: center;
+    &:hover{
+        text-decoration: underline;
+    }
+}
 // -------------------Header-------------------------
 .header-container{
     width: 100vw;
@@ -14,17 +36,13 @@
     justify-content: space-between;
     align-items: center;
     a{
-        display: block;
         @include textStyle($mainFont, $smallSize, $mainFontWeight, 1.5rem, $colorDark);
-        text-transform: uppercase;
-        &:hover{
-            text-decoration: underline;
-        }
     }
     .header-list-1{
         display: flex;
         .menu-link1{
-            margin-right: 2.5rem;
+            text-align: left;
+            margin-right: 3rem;
         }
     }
 }
@@ -37,32 +55,17 @@
     background-size: cover;
     background-position: center center;
     .header-title{
-        width: 100%;
-        margin: 0 auto;
         @include textStyle($mainFont, $bigTitleSize, $mainFontWeight, 4.6rem, $colorLight);
         padding-top: 18rem;
-        text-transform: capitalize;
-        text-align: center;
     }
     .header-text{
-        width: 100%;
-        margin: 0 auto;
         @include textStyle($mainFont, $mainSize, $mainFontWeight, 1.8rem, $colorLight);
         padding-top: 1.2rem;
-        text-align: center;
     }
     .header-link{
-        display: block;
-        width: 100%;
-        margin: 0 auto;
         @include textStyle($mainFont, $smallSize, $mainFontWeight, 1.5rem, $colorLight);
         padding-top: 3rem;
-        text-align: center;
-        text-transform: uppercase;
         padding-bottom: 20rem;
-        &:hover{
-            text-decoration: underline;
-        }
     }
 }
 
@@ -71,30 +74,15 @@
     width: 50rem;
     margin: 8rem auto;
     .design-title{
-        width: 100%;
-        margin: 0 auto;
         @include textStyle($mainFont, $bigTitleSize, $mainFontWeight, 5.8rem, $colorDark);
-        text-transform: capitalize;
-        text-align: center;
     }
     .design-text{
-        width: 100%;
-        margin: 0 auto;
         @include textStyle($mainFont, $mainSize, $mainFontWeight, 2.4rem, $infoColor);
         padding-top: 2.5rem;
-        text-align: center;
     }
     .design-link{
-        display: block;
-        width: 100%;
-        margin: 0 auto;
         @include textStyle($mainFont, $smallSize, $mainFontWeight, 2.1rem, $colorDark);
         padding-top: 2.5rem;
-        text-align: center;
-        text-transform: uppercase;
-        &:hover{
-            text-decoration: underline;
-        }
     }
 }
 // -------------------Computers-------------------------
@@ -117,24 +105,12 @@
         }
     }
     .computers-title{
-        width: 100%;
-        margin: 0 auto;
         padding-top: 5rem;
         @include textStyle($mainFont, $middleSize, $mainFontWeight, 3rem, $colorDark);
-        text-align: center;
-        text-transform: capitalize;
     }
     .computers-link{
-        display: block;
-        width: 100%;
-        margin: 0 auto;
         @include textStyle($mainFont, $smallSize, $mainFontWeight, 1.5rem, $colorDark);
         padding-top: 2.5rem;
-        text-align: center;
-        text-transform: uppercase;
-        &:hover{
-            text-decoration: underline;
-        }
     }
 }
 
@@ -142,24 +118,16 @@
 .products-container{
     width: 121rem;
     margin: 10rem auto;
-    // padding-top: 10rem;
 }
 .products-header{
     width: 28rem;
     margin: 0 auto;
     .products-title{
-        width: 100%;
-        margin: 0 auto;
         @include textStyle($mainFont, $titleSize, $mainFontWeight, 3.6rem, $colorDark);
-        text-align: center;
-        text-transform: capitalize; 
     }
     .products-text{
-        width: 100%;
-        margin: 0 auto;
         @include textStyle($mainFont, $mainSize, $mainFontWeight, 1.8rem, $infoColor);
         padding-top: 1.6rem;
-        text-align: center;
     }
     .products-scroll{
         display: flex;
@@ -217,32 +185,17 @@
     background-size: cover;
     background-position: center center;
     .main-title{
-        width: 100%;
-        margin: 0 auto;
         padding-top: 17rem;
         @include textStyle($mainFont, $H1size, $mainFontWeight, 7rem, $colorLight);
-        text-transform: capitalize;
-        text-align: center;
     }
     .main-text{
-        width: 100%;
-        margin: 0 auto;
         @include textStyle($mainFont, $mainSize, $mainFontWeight, 1.6rem, $colorLight);
         padding-top: 1.5rem;
-        text-align: center;
     }
     .main-link{
-        display: block;
-        width: 100%;
-        margin: 0 auto;
         @include textStyle($mainFont, $smallSize, $mainFontWeight, 1.5rem, $colorLight);
         padding-top: 3rem;
         padding-bottom: 19rem;
-        text-align: center;
-        text-transform: uppercase;
-        &:hover{
-            text-decoration: underline;
-        }
     }
 }
 // -------------------Made-------------------------
@@ -254,19 +207,12 @@
     width: 80rem;
     margin: 0 auto;
     .made-title1{
-        width: 100%;
-        margin: 0 auto;
         padding-top: 11rem;
         @include textStyle($mainFont, $titleSize, $mainFontWeight, 3.6rem, $colorDark);
-        text-transform: capitalize;
-        text-align: center;
     }
     .made-text1{
-        width: 100%;
-        margin: 0 auto;
         padding-top: 2.5rem;
         @include textStyle($mainFont, $mainSize, $mainFontWeight, 2.4rem, $infoColor);
-        text-align: center;
     }
 }
 .made-img{
@@ -279,19 +225,12 @@
     width: 80rem;
     margin: 0 auto;
     .made-title2{
-        width: 100%;
-        margin: 0 auto;
         padding-top: 4rem;
         @include textStyle($mainFont, $titleSize, $mainFontWeight, 3.6rem, $colorDark);
-        text-transform: capitalize;
-        text-align: center;
     }
     .made-text2{
-        width: 100%;
-        margin: 0 auto;
         padding-top: 2.5rem;
         @include textStyle($mainFont, $mainSize, $mainFontWeight, 2.4rem, $infoColor);
-        text-align: center;
     }
 }
 // -------------------gallery-------------------------
@@ -400,24 +339,12 @@
     width: 40rem;
     margin: 0 auto;
     .hope-title{
-        width: 100%;
-        margin: 0 auto;
         @include textStyle($mainFont, $titleSize, $mainFontWeight, 3.6rem, $colorDark);
-        text-transform: capitalize;
-        text-align: center;
         padding-top: 3rem;
     }
     .hope-link{
-        display: block;
-        width: 100%;
-        margin: 0 auto;
         @include textStyle($mainFont, $smallSize, $mainFontWeight, 2.1rem, $colorDark);
         padding-top: 4.5rem;
-        text-align: center;
-        text-transform: uppercase;
-        &:hover{
-            text-decoration: underline;
-        }
     }
 }
 // -------------------gray-------------------------
@@ -443,19 +370,12 @@
         }
     }
     .gray-title{
-        width: 100%;
-        margin: 0 auto;
         @include textStyle($mainFont, $bigTitleSize, $mainFontWeight, 5.8rem, $colorLight);
-        text-transform: capitalize;
-        text-align: center;
         padding-top: 18rem;
     }
     .gray-text{
-        width: 100%;
-        margin: 0 auto;
         @include textStyle($mainFont, $mainSize, $mainFontWeight, 2.4rem, $colorLight);
         padding-top: 2.5rem;
-        text-align: center;
         padding-bottom: 12rem;
     }
 }
@@ -475,10 +395,7 @@
     top: 0;
     right: 5rem;
     .footer-logo-text{
-        margin: 0 auto;
-        width: 100%;
         @include textStyle($mainFont, $mainSize, $mainFontWeight, 1.6rem, $colorLight);
-        text-align: center;
     }
     .footer-logo-text1{
         padding-top: 2.2rem;
@@ -488,16 +405,10 @@
     padding-top: 8rem;
     margin-left: 5rem;
     display: flex;           
-    .footer-menu-item{
-        display: block;
-        width: 100%;
-        margin: 0 auto;
+    .footer-link{
+        text-align: left;
         @include textStyle($mainFont, $footerSize, $mainFontWeight, 2.4rem, $colorDark);
-        text-transform: uppercase;
         margin-bottom: 1.5rem;
-        &:hover{
-            text-decoration: underline;
-        }
     }
     .footer-sign{
         margin-left: 4rem;
@@ -545,15 +456,16 @@
     justify-content: flex-end;
     margin-right: 5rem;
     padding-bottom: 3rem;
-    .footer-link{
+    .footer-item{
         @include textStyle($mainFont,$smallSize, $mainFontWeight, 1.5rem, $infoColor);
         margin-right: 4rem;
         transition: all .4s linear;
         &:hover{
             color:$colorDark;
+            text-decoration: underline;
         }
     }
-    .footer-footer-link4{
+    .footer-item4{
         margin-right: 0;
     }
 }
@@ -903,7 +815,7 @@
     }
     .footer-info{
         margin-top: 5rem;
-        .footer-link{
+        .footer-item{
             font-size: $mainSize;
             margin-right: 2rem;
         }
@@ -979,7 +891,7 @@
         margin-top: 5rem;
     }
     // -------------------footer-------------------------
-    .footer-link{
+    .footer-item{
         font-size: $mainSize;
         margin-right: 1rem;
     }

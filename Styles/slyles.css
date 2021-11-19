@@ -27,6 +27,32 @@ a {
   text-decoration: none;
 }
 
+.title {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 18rem;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.text {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.link {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
 .header-container {
   width: 100vw;
   margin: 0 auto;
@@ -47,17 +73,11 @@ a {
 }
 
 .header-menu a {
-  display: block;
   font-family: "Roboto", sans-serif;
   font-size: 1.3rem;
   line-height: 1.5rem;
   font-weight: 400;
   color: #000000;
-  text-transform: uppercase;
-}
-
-.header-menu a:hover {
-  text-decoration: underline;
 }
 
 .header-menu .header-list-1 {
@@ -67,7 +87,8 @@ a {
 }
 
 .header-menu .header-list-1 .menu-link1 {
-  margin-right: 2.5rem;
+  text-align: left;
+  margin-right: 3rem;
 }
 
 .header-content {
@@ -81,47 +102,31 @@ a {
 }
 
 .header-content .header-title {
-  width: 100%;
-  margin: 0 auto;
   font-family: "Roboto", sans-serif;
   font-size: 4.3rem;
   line-height: 4.6rem;
   font-weight: 400;
   color: #FFFFFF;
   padding-top: 18rem;
-  text-transform: capitalize;
-  text-align: center;
 }
 
 .header-content .header-text {
-  width: 100%;
-  margin: 0 auto;
   font-family: "Roboto", sans-serif;
   font-size: 1.4rem;
   line-height: 1.8rem;
   font-weight: 400;
   color: #FFFFFF;
   padding-top: 1.2rem;
-  text-align: center;
 }
 
 .header-content .header-link {
-  display: block;
-  width: 100%;
-  margin: 0 auto;
   font-family: "Roboto", sans-serif;
   font-size: 1.3rem;
   line-height: 1.5rem;
   font-weight: 400;
   color: #FFFFFF;
   padding-top: 3rem;
-  text-align: center;
-  text-transform: uppercase;
   padding-bottom: 20rem;
-}
-
-.header-content .header-link:hover {
-  text-decoration: underline;
 }
 
 .design-container {
@@ -130,45 +135,29 @@ a {
 }
 
 .design-container .design-title {
-  width: 100%;
-  margin: 0 auto;
   font-family: "Roboto", sans-serif;
   font-size: 4.3rem;
   line-height: 5.8rem;
   font-weight: 400;
   color: #000000;
-  text-transform: capitalize;
-  text-align: center;
 }
 
 .design-container .design-text {
-  width: 100%;
-  margin: 0 auto;
   font-family: "Roboto", sans-serif;
   font-size: 1.4rem;
   line-height: 2.4rem;
   font-weight: 400;
   color: #A0A0A0;
   padding-top: 2.5rem;
-  text-align: center;
 }
 
 .design-container .design-link {
-  display: block;
-  width: 100%;
-  margin: 0 auto;
   font-family: "Roboto", sans-serif;
   font-size: 1.3rem;
   line-height: 2.1rem;
   font-weight: 400;
   color: #000000;
   padding-top: 2.5rem;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.design-container .design-link:hover {
-  text-decoration: underline;
 }
 
 .computers-container {
@@ -202,34 +191,21 @@ a {
 }
 
 .computers-container .computers-title {
-  width: 100%;
-  margin: 0 auto;
   padding-top: 5rem;
   font-family: "Roboto", sans-serif;
   font-size: 2.7rem;
   line-height: 3rem;
   font-weight: 400;
   color: #000000;
-  text-align: center;
-  text-transform: capitalize;
 }
 
 .computers-container .computers-link {
-  display: block;
-  width: 100%;
-  margin: 0 auto;
   font-family: "Roboto", sans-serif;
   font-size: 1.3rem;
   line-height: 1.5rem;
   font-weight: 400;
   color: #000000;
   padding-top: 2.5rem;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.computers-container .computers-link:hover {
-  text-decoration: underline;
 }
 
 .products-container {
@@ -243,27 +219,20 @@ a {
 }
 
 .products-header .products-title {
-  width: 100%;
-  margin: 0 auto;
   font-family: "Roboto", sans-serif;
   font-size: 3.4rem;
   line-height: 3.6rem;
   font-weight: 400;
   color: #000000;
-  text-align: center;
-  text-transform: capitalize;
 }
 
 .products-header .products-text {
-  width: 100%;
-  margin: 0 auto;
   font-family: "Roboto", sans-serif;
   font-size: 1.4rem;
   line-height: 1.8rem;
   font-weight: 400;
   color: #A0A0A0;
   padding-top: 1.6rem;
-  text-align: center;
 }
 
 .products-header .products-scroll {
@@ -349,34 +318,24 @@ a {
 }
 
 .main-container .main-title {
-  width: 100%;
-  margin: 0 auto;
   padding-top: 17rem;
   font-family: "Roboto", sans-serif;
   font-size: 6.6rem;
   line-height: 7rem;
   font-weight: 400;
   color: #FFFFFF;
-  text-transform: capitalize;
-  text-align: center;
 }
 
 .main-container .main-text {
-  width: 100%;
-  margin: 0 auto;
   font-family: "Roboto", sans-serif;
   font-size: 1.4rem;
   line-height: 1.6rem;
   font-weight: 400;
   color: #FFFFFF;
   padding-top: 1.5rem;
-  text-align: center;
 }
 
 .main-container .main-link {
-  display: block;
-  width: 100%;
-  margin: 0 auto;
   font-family: "Roboto", sans-serif;
   font-size: 1.3rem;
   line-height: 1.5rem;
@@ -384,12 +343,6 @@ a {
   color: #FFFFFF;
   padding-top: 3rem;
   padding-bottom: 19rem;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.main-container .main-link:hover {
-  text-decoration: underline;
 }
 
 .made-container {
@@ -403,28 +356,21 @@ a {
 }
 
 .made-item1 .made-title1 {
-  width: 100%;
-  margin: 0 auto;
   padding-top: 11rem;
   font-family: "Roboto", sans-serif;
   font-size: 3.4rem;
   line-height: 3.6rem;
   font-weight: 400;
   color: #000000;
-  text-transform: capitalize;
-  text-align: center;
 }
 
 .made-item1 .made-text1 {
-  width: 100%;
-  margin: 0 auto;
   padding-top: 2.5rem;
   font-family: "Roboto", sans-serif;
   font-size: 1.4rem;
   line-height: 2.4rem;
   font-weight: 400;
   color: #A0A0A0;
-  text-align: center;
 }
 
 .made-img {
@@ -440,28 +386,21 @@ a {
 }
 
 .made-item2 .made-title2 {
-  width: 100%;
-  margin: 0 auto;
   padding-top: 4rem;
   font-family: "Roboto", sans-serif;
   font-size: 3.4rem;
   line-height: 3.6rem;
   font-weight: 400;
   color: #000000;
-  text-transform: capitalize;
-  text-align: center;
 }
 
 .made-item2 .made-text2 {
-  width: 100%;
-  margin: 0 auto;
   padding-top: 2.5rem;
   font-family: "Roboto", sans-serif;
   font-size: 1.4rem;
   line-height: 2.4rem;
   font-weight: 400;
   color: #A0A0A0;
-  text-align: center;
 }
 
 .gallery-container {
@@ -653,34 +592,21 @@ a {
 }
 
 .hope-container .hope-title {
-  width: 100%;
-  margin: 0 auto;
   font-family: "Roboto", sans-serif;
   font-size: 3.4rem;
   line-height: 3.6rem;
   font-weight: 400;
   color: #000000;
-  text-transform: capitalize;
-  text-align: center;
   padding-top: 3rem;
 }
 
 .hope-container .hope-link {
-  display: block;
-  width: 100%;
-  margin: 0 auto;
   font-family: "Roboto", sans-serif;
   font-size: 1.3rem;
   line-height: 2.1rem;
   font-weight: 400;
   color: #000000;
   padding-top: 4.5rem;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.hope-container .hope-link:hover {
-  text-decoration: underline;
 }
 
 .gray-container {
@@ -711,28 +637,21 @@ a {
 }
 
 .gray-container .gray-title {
-  width: 100%;
-  margin: 0 auto;
   font-family: "Roboto", sans-serif;
   font-size: 4.3rem;
   line-height: 5.8rem;
   font-weight: 400;
   color: #FFFFFF;
-  text-transform: capitalize;
-  text-align: center;
   padding-top: 18rem;
 }
 
 .gray-container .gray-text {
-  width: 100%;
-  margin: 0 auto;
   font-family: "Roboto", sans-serif;
   font-size: 1.4rem;
   line-height: 2.4rem;
   font-weight: 400;
   color: #FFFFFF;
   padding-top: 2.5rem;
-  text-align: center;
   padding-bottom: 12rem;
 }
 
@@ -754,14 +673,11 @@ a {
 }
 
 .footer-logo .footer-logo-text {
-  margin: 0 auto;
-  width: 100%;
   font-family: "Roboto", sans-serif;
   font-size: 1.4rem;
   line-height: 1.6rem;
   font-weight: 400;
   color: #FFFFFF;
-  text-align: center;
 }
 
 .footer-logo .footer-logo-text1 {
@@ -776,21 +692,14 @@ a {
   display: flex;
 }
 
-.footer-content .footer-menu-item {
-  display: block;
-  width: 100%;
-  margin: 0 auto;
+.footer-content .footer-link {
+  text-align: left;
   font-family: "Roboto", sans-serif;
   font-size: 2.2rem;
   line-height: 2.4rem;
   font-weight: 400;
   color: #000000;
-  text-transform: uppercase;
   margin-bottom: 1.5rem;
-}
-
-.footer-content .footer-menu-item:hover {
-  text-decoration: underline;
 }
 
 .footer-content .footer-sign {
@@ -896,7 +805,7 @@ a {
   padding-bottom: 3rem;
 }
 
-.footer-info .footer-link {
+.footer-info .footer-item {
   font-family: "Roboto", sans-serif;
   font-size: 1.3rem;
   line-height: 1.5rem;
@@ -907,11 +816,12 @@ a {
   transition: all .4s linear;
 }
 
-.footer-info .footer-link:hover {
+.footer-info .footer-item:hover {
   color: #000000;
+  text-decoration: underline;
 }
 
-.footer-info .footer-footer-link4 {
+.footer-info .footer-item4 {
   margin-right: 0;
 }
 
@@ -1249,7 +1159,7 @@ a {
   .footer-info {
     margin-top: 5rem;
   }
-  .footer-info .footer-link {
+  .footer-info .footer-item {
     font-size: 1.4rem;
     margin-right: 2rem;
   }
@@ -1311,7 +1221,7 @@ a {
     margin: 0 auto;
     margin-top: 5rem;
   }
-  .footer-link {
+  .footer-item {
     font-size: 1.4rem;
     margin-right: 1rem;
   }
