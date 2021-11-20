@@ -27,6 +27,10 @@ a {
   text-decoration: none;
 }
 
+.wrapper, header, section, footer, main {
+  overflow-x: hidden;
+}
+
 .title {
   width: 100%;
   margin: 0 auto;
@@ -840,6 +844,14 @@ a {
     width: 100%;
     margin: 2rem auto;
   }
+  .header-menu .header-list-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header-menu .header-list-1 .menu-link1 {
+    margin-right: 3rem;
+  }
   .header-menu .header-list-1 .header-logo {
     margin-left: 30rem;
     margin-right: 30rem;
@@ -906,6 +918,14 @@ a {
   .header-menu {
     width: 100%;
     margin: 2rem auto;
+  }
+  .header-menu .header-list-1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header-menu .header-list-1 .menu-link1 {
+    margin-right: 3rem;
   }
   .header-menu .header-list-1 .header-logo {
     margin-left: 15rem;
