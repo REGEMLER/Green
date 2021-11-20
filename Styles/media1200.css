@@ -5,8 +5,10 @@
   .header-menu {
     width: 100%;
     margin: 2rem auto;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+  }
+  .header-menu .header-list-1 .header-logo {
+    margin-left: 30rem;
+    margin-right: 30rem;
   }
   .design-container {
     width: 50rem;

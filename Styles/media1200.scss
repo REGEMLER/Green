@@ -6,7 +6,14 @@
     .header-menu{
         width: 100%;
         margin: 2rem auto;
-        justify-content: space-around;
+        .header-list-1{
+            .menu-link1{
+            }
+            .header-logo{
+                margin-left: 30rem;
+                margin-right: 30rem;
+            }
+        }
     }
     // ------------------design-------------------------
     .design-container{

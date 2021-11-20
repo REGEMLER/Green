@@ -3,6 +3,18 @@
     .wrapper{
         max-width: 992px;
     }
+    .header-menu{
+        width: 100%;
+        margin: 2rem auto;
+        .header-list-1{
+            .menu-link1{
+            }
+            .header-logo{
+                margin-left: 15rem;
+                margin-right: 15rem;
+            }
+        }
+    }
     .header-content{
         .header-title{
             padding-top: 10rem;

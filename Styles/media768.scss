@@ -6,19 +6,39 @@
     .header-menu{
         width: 100%;
         margin: 0 auto;
-        flex-direction: column;
-        justify-content: center;
         background-color: $mainColor;
+        .toggle{
+            clear: both;
+            display: block;
+            width: 100%;
+            background-color:$mainColor;
+            font-size: 1.8rem;
+            line-height: 4rem;
+            text-align: center;
+            color: black;
+        }
+        #checkbox-menu:checked + label .header-list-1{
+            height: 10rem;
+            opacity: 1;
+            visibility: visible;
+            transition: all .5s linear;
+        }
         a{
             margin-bottom: 1rem;
         }
-        .header-logo{
-            order: -1;
-            margin: 1rem 0;
-        }
         .header-list-1{
-            display: block;
+            flex-direction: column;
+            align-items: center;
+            height: 0;
+            margin: 0;
+            opacity: 0;
+            visibility: hidden;
+            transition: height .3s linear;
             .menu-link1{
+                margin-right: 0;
+            }
+            .header-logo{
+                margin-left: 0;
                 margin-right: 0;
             }
         }
