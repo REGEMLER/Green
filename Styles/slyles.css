@@ -142,7 +142,7 @@ a {
 
 .design-container {
   width: 50rem;
-  margin: 8rem auto;
+  margin: 7rem auto;
 }
 
 .design-container .design-title {
@@ -151,6 +151,7 @@ a {
   line-height: 5.8rem;
   font-weight: 400;
   color: #000000;
+  padding-top: 0;
 }
 
 .design-container .design-text {
@@ -173,7 +174,7 @@ a {
 
 .computers-container {
   width: 121rem;
-  margin: 8rem auto;
+  margin: 7rem auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -221,7 +222,7 @@ a {
 
 .products-container {
   width: 121rem;
-  margin: 10rem auto;
+  margin: 7rem auto;
 }
 
 .products-header {
@@ -235,6 +236,7 @@ a {
   line-height: 3.6rem;
   font-weight: 400;
   color: #000000;
+  padding-top: 0;
 }
 
 .products-header .products-text {
@@ -858,7 +860,7 @@ a {
   }
   .design-container {
     width: 50rem;
-    margin: 5rem auto;
+    margin: 4rem auto;
   }
   .computers-container {
     width: 100%;
@@ -873,7 +875,7 @@ a {
   }
   .products-container {
     width: 100rem;
-    margin: 8rem auto;
+    margin: 4rem auto;
   }
   .products-container .products-card {
     margin-right: 2rem;
@@ -960,7 +962,7 @@ a {
   }
   .products-container {
     width: 100%;
-    margin: 5rem auto;
+    margin: 3rem auto;
   }
   .products-container .products-scroll {
     margin: 2.5rem auto;
@@ -1097,12 +1099,16 @@ a {
     -webkit-transition: height .3s linear;
     transition: height .3s linear;
   }
+  .header-menu .header-list-1 .menu-link {
+    padding-bottom: 1rem;
+  }
   .header-menu .header-list-1 .menu-link1 {
     margin-right: 0;
   }
   .header-menu .header-list-1 .header-logo {
     margin-left: 0;
     margin-right: 0;
+    padding-bottom: 1rem;
   }
   .header-content .header-title {
     padding-top: 5rem;
@@ -1117,7 +1123,10 @@ a {
   }
   .design-container {
     width: 50rem;
-    margin: 3rem auto;
+    margin: 1rem auto;
+  }
+  .design-container .design-title {
+    padding: 0;
   }
   .design-container .design-link {
     font-size: 2.7rem;
@@ -1125,7 +1134,7 @@ a {
   }
   .computers-container {
     width: 100%;
-    margin: 3rem auto;
+    margin: 1rem auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1153,7 +1162,10 @@ a {
   }
   .products-container {
     width: 100%;
-    margin: 3rem auto;
+    margin: 1rem auto;
+  }
+  .products-container .products-title {
+    padding: 0;
   }
   .products-container .products-row {
     grid-gap: 3rem;
@@ -1228,7 +1240,7 @@ a {
   }
   .design-container {
     width: 30rem;
-    margin: 3rem auto;
+    margin: 1rem auto;
   }
   .computers-container .computers-img {
     height: 30rem;
