@@ -71,10 +71,6 @@ a {
   display: none;
 }
 
-.header-menu #checkbox-menu {
-  display: none;
-}
-
 .header-menu a {
   font-family: "Roboto", sans-serif;
   font-size: 1.3rem;
@@ -1073,13 +1069,6 @@ a {
     line-height: 4rem;
     text-align: center;
     color: black;
-  }
-  .header-menu #checkbox-menu:checked + label .header-list-1 {
-    height: 10rem;
-    opacity: 1;
-    visibility: visible;
-    -webkit-transition: all .5s linear;
-    transition: all .5s linear;
   }
   .header-menu a {
     margin-bottom: 1rem;

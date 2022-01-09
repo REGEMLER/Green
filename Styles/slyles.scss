@@ -13,9 +13,6 @@
     .toggle{
         display: none;
     }
-    #checkbox-menu{
-        display: none;
-    }
     a{
         @include textStyle($mainFont, $smallSize, $mainFontWeight, 1.5rem, $colorDark);
         text-align: left;
@@ -690,12 +687,6 @@
             line-height: 4rem;
             text-align: center;
             color: black;
-        }
-        #checkbox-menu:checked + label .header-list-1{
-            height: 10rem;
-            opacity: 1;
-            visibility: visible;
-            transition: all .5s linear;
         }
         a{
             margin-bottom: 1rem;
