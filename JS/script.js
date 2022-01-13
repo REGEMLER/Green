@@ -7,7 +7,7 @@ toggler.addEventListener(`click`, () =>{
         menu.style.opacity = `0`;
 
     } else{
-        menu.style.height = `10rem`;
+        menu.style.height = `14rem`;
         menu.style.visibility = `visible`;
         menu.style.opacity = `1`;
     }

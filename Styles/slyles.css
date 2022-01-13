@@ -87,15 +87,25 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .header-menu .header-list-1 .menu-link1 {
   margin-right: 3rem;
 }
 
+.header-menu .header-list-1 .menu-link2 {
+  margin-right: 100rem;
+}
+
 .header-menu .header-list-1 .header-logo {
-  margin-left: 40rem;
-  margin-right: 40rem;
+  position: absolute;
+  text-align: center;
+  left: 0;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .header-content {
@@ -596,8 +606,9 @@ a {
 }
 
 .hope-container {
-  width: 40rem;
+  width: 100%;
   margin: 0 auto;
+  text-align: center;
 }
 
 .hope-container .hope-title {
@@ -607,6 +618,7 @@ a {
   font-weight: 400;
   color: #000000;
   padding-top: 3rem;
+  text-align: center;
 }
 
 .hope-container .hope-link {
@@ -616,6 +628,7 @@ a {
   font-weight: 400;
   color: #000000;
   padding-top: 4.5rem;
+  text-align: center;
 }
 
 .gray-container {
@@ -815,6 +828,8 @@ a {
 }
 
 .footer-info .footer-item {
+  display: block;
+  text-align: center;
   font-family: "Roboto", sans-serif;
   font-size: 1.3rem;
   line-height: 1.5rem;
@@ -841,6 +856,7 @@ a {
   .header-menu {
     width: 100%;
     margin: 2rem auto;
+    padding: 0 10px;
   }
   .header-menu .header-list-1 {
     display: -webkit-box;
@@ -850,9 +866,8 @@ a {
   .header-menu .header-list-1 .menu-link1 {
     margin-right: 3rem;
   }
-  .header-menu .header-list-1 .header-logo {
-    margin-left: 30rem;
-    margin-right: 30rem;
+  .header-menu .header-list-1 .menu-link2 {
+    margin-right: 80rem;
   }
   .design-container {
     width: 50rem;
@@ -869,15 +884,15 @@ a {
   .computers-container .computers-title {
     padding-top: 3rem;
   }
+  .products-card {
+    margin-right: 2rem;
+  }
+  .products-card4 {
+    margin-right: 0;
+  }
   .products-container {
     width: 100rem;
     margin: 4rem auto;
-  }
-  .products-container .products-card {
-    margin-right: 2rem;
-  }
-  .products-container .products-card4 {
-    margin-right: 0;
   }
   .products-container .products-img {
     width: 23rem;
@@ -925,9 +940,8 @@ a {
   .header-menu .header-list-1 .menu-link1 {
     margin-right: 3rem;
   }
-  .header-menu .header-list-1 .header-logo {
-    margin-left: 15rem;
-    margin-right: 15rem;
+  .header-menu .header-list-1 .menu-link2 {
+    margin-right: 60rem;
   }
   .header-content .header-title {
     padding-top: 10rem;
@@ -985,6 +999,7 @@ a {
   }
   .products-card {
     margin: 0;
+    margin-right: 0;
   }
   .products-card1 {
     -ms-grid-row: 1;
@@ -1071,7 +1086,7 @@ a {
     color: black;
   }
   .header-menu a {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
   .header-menu .header-list-1 {
     -webkit-box-orient: vertical;
@@ -1088,16 +1103,23 @@ a {
     -webkit-transition: height .3s linear;
     transition: height .3s linear;
   }
-  .header-menu .header-list-1 .menu-link {
-    padding-bottom: 1rem;
+  .header-menu .header-list-1 .sum-header-logo {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
   }
   .header-menu .header-list-1 .menu-link1 {
     margin-right: 0;
   }
-  .header-menu .header-list-1 .header-logo {
-    margin-left: 0;
+  .header-menu .header-list-1 .menu-link2 {
     margin-right: 0;
-    padding-bottom: 1rem;
+  }
+  .header-menu .header-list-1 .header-logo {
+    position: static;
+    padding-top: 1rem;
+    margin-bottom: 2rem;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
   .header-content .header-title {
     padding-top: 5rem;
@@ -1149,9 +1171,15 @@ a {
     font-size: 2.7rem;
     color: #A0A0A0;
   }
+  .products-header .products-text {
+    padding-bottom: 2.5rem;
+  }
   .products-container {
     width: 100%;
     margin: 1rem auto;
+  }
+  .products-container .products-scroll {
+    display: none;
   }
   .products-container .products-title {
     padding: 0;
@@ -1216,10 +1244,15 @@ a {
   }
   .footer-info {
     margin-top: 5rem;
+    margin-right: 0;
   }
   .footer-info .footer-item {
     font-size: 1.4rem;
     margin-right: 2rem;
+    text-align: center;
+  }
+  .footer-info .footer-item4 {
+    margin-right: 0;
   }
 }
 
@@ -1262,7 +1295,8 @@ a {
     width: 30rem;
   }
   .gallery-container {
-    width: 95%;
+    width: 100%;
+    padding: 0 2%;
     margin: 3rem auto;
     -ms-grid-rows: (12)[1fr];
         grid-template-rows: repeat(1fr, 12);
@@ -1279,9 +1313,15 @@ a {
     margin: 0 auto;
     margin-top: 5rem;
   }
+  .hope-container {
+    padding: 0 10px;
+  }
+  .footer-content {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
   .footer-item {
     font-size: 1.4rem;
-    margin-right: 1rem;
   }
 }
 /*# sourceMappingURL=slyles.css.map */

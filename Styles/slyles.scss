@@ -20,12 +20,20 @@
     .header-list-1{
         display: flex;
         align-items: center;
+        position: relative;
         .menu-link1{
             margin-right: 3rem;
         }
+        .menu-link2{
+            margin-right: 100rem;
+        }
         .header-logo{
-            margin-left: 40rem;
-            margin-right: 40rem;
+            position: absolute;
+            text-align: center;
+            left: 0;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
         }
     }
 }
@@ -319,15 +327,18 @@
 }
 // -------------------hope-------------------------
 .hope-container{
-    width: 40rem;
+    width: 100%;
     margin: 0 auto;
+    text-align: center;
     .hope-title{
         @include textStyle($mainFont, $titleSize, $mainFontWeight, 3.6rem, $colorDark);
         padding-top: 3rem;
+        text-align: center;
     }
     .hope-link{
         @include textStyle($mainFont, $smallSize, $mainFontWeight, 2.1rem, $colorDark);
         padding-top: 4.5rem;
+        text-align: center;
     }
 }
 // -------------------gray-------------------------
@@ -440,6 +451,8 @@
     margin-right: 5rem;
     padding-bottom: 3rem;
     .footer-item{
+        display: block;
+        text-align: center;
         @include textStyle($mainFont,$smallSize, $mainFontWeight, 1.5rem, $infoColor);
         margin-right: 4rem;
         transition: all .4s linear;
@@ -452,7 +465,7 @@
         margin-right: 0;
     }
 }
-// @import "media1200";
+
 @media screen and (max-width: 1200px) {
     .wrapper{
         max-width: 1200px;
@@ -461,14 +474,14 @@
     .header-menu{
         width: 100%;
         margin: 2rem auto;
+        padding: 0 10px;
         .header-list-1{
             display: flex;
             .menu-link1{
                 margin-right: 3rem;
             }
-            .header-logo{
-                margin-left: 30rem;
-                margin-right: 30rem;
+            .menu-link2{
+                margin-right: 80rem;
             }
         }
     }
@@ -490,15 +503,15 @@
         }
     }
     // ------------------products-------------------------
+    .products-card{
+        margin-right: 2rem;
+    }
+    .products-card4{
+        margin-right: 0;
+    }
     .products-container{
         width: 100rem;
         margin: 4rem auto;
-        .products-card{
-            margin-right: 2rem;
-        }
-        .products-card4{
-            margin-right: 0;
-        }
         .products-img{
             width: 23rem;
             height: 30rem;
@@ -546,9 +559,8 @@
             .menu-link1{
                 margin-right: 3rem;
             }
-            .header-logo{
-                margin-left: 15rem;
-                margin-right: 15rem;
+            .menu-link2{
+                margin-right: 60rem;
             }
         }
     }
@@ -609,6 +621,7 @@
     }
     .products-card{
         margin: 0;
+        margin-right: 0;
     }
     .products-card1{
       grid-area: a;  
@@ -689,7 +702,7 @@
             color: black;
         }
         a{
-            margin-bottom: 1rem;
+            margin-bottom: 2rem;
         }
         .header-list-1{
             flex-direction: column;
@@ -699,16 +712,20 @@
             opacity: 0;
             visibility: hidden;
             transition: height .3s linear;
-            .menu-link{
-                padding-bottom: 1rem;
+            .sum-header-logo{
+                order: -1;
             }
             .menu-link1{
                 margin-right: 0;
             }
-            .header-logo{
-                margin-left: 0;
+            .menu-link2{
                 margin-right: 0;
-                padding-bottom: 1rem;
+            }
+            .header-logo{
+                position: static;
+                padding-top: 1rem;
+                margin-bottom: 2rem;
+                transform: translateY(0);
             }
         }
     }
@@ -763,9 +780,17 @@
         }
     }
     // -----------------products-------------------------
+    .products-header{
+        .products-text{
+            padding-bottom: 2.5rem;
+        }
+    }
     .products-container{
         width: 100%;
         margin: 1rem auto;
+        .products-scroll{
+            display: none;
+        }
         .products-title{
             padding: 0;
         }
@@ -838,9 +863,14 @@
     }
     .footer-info{
         margin-top: 5rem;
+        margin-right: 0;
         .footer-item{
             font-size: $mainSize;
             margin-right: 2rem;
+            text-align: center;
+        }
+        .footer-item4{
+            margin-right: 0;
         }
     }
 }
@@ -883,7 +913,8 @@
     }
     // -------------------gallery-------------------------
     .gallery-container{
-        width: 95%;
+        width: 100%;
+        padding: 0 2%;
         margin: 3rem auto;
         grid-template-rows: repeat(1fr,12);
         grid-template-columns: repeat(1fr,2);
@@ -910,9 +941,16 @@
         margin: 0 auto;
         margin-top: 5rem;
     }
+    // -------------------hope-------------------------
+    .hope-container{
+        padding: 0 10px;
+    }
     // -------------------footer-------------------------
+    .footer-content{
+        padding-right: 10px;
+        padding-left: 10px;
+    }
     .footer-item{
         font-size: $mainSize;
-        margin-right: 1rem;
     }
 }
